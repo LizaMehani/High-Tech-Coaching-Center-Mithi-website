@@ -36,11 +36,15 @@ const featuresList = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-14 sm:py-20 bg-slate-50 text-slate-900">
+    <section id="features" className="py-14 sm:py-20 bg-white text-slate-900 border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-          <span className="text-sky-600 font-semibold text-xs sm:text-sm uppercase tracking-wider">Why Choose Us</span>
-          <h2 className="text-2xl sm:text-4xl font-bold mt-2">Modern Facilities for Serious Learners</h2>
+          <span className="text-blue-700 font-semibold text-xs sm:text-sm uppercase tracking-wider">
+            Why Choose Us
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 mt-2">
+            Modern Facilities for Serious Learners
+          </h2>
           <p className="text-slate-600 mt-2.5 text-sm sm:text-base">
             Everything a student needs to excel in Matric and Intermediate board examinations.
           </p>
@@ -53,12 +57,12 @@ const Features = () => {
               <div
                 key={idx}
                 tabIndex={0}
-                className="touch-card group bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl active:shadow-xl focus:shadow-xl hover:-translate-y-1.5 active:-translate-y-1.5 focus:-translate-y-1.5 hover:border-sky-400 active:border-sky-400 transition-all duration-300"
+                className="touch-card group bg-slate-50/70 hover:bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md active:shadow-md focus:shadow-md hover:-translate-y-1 active:-translate-y-1 focus:-translate-y-1 hover:border-blue-300 active:border-blue-300 transition-all duration-300"
               >
-                <div className="w-11 h-11 sm:w-12 sm:h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 bg-blue-50 text-blue-700 border border-blue-100 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
                   <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2">{item.title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
               </div>
             );

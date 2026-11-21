@@ -1,3 +1,29 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --text-h: #0f172a;
+  --text-b: #334155;
+  --accent: #1d4ed8;
+  --accent-hover: #1e40af;
+  --accent-bg: #eff6ff;
+  --accent-border: #93c5fd;
+  --border: #e2e8f0;
+  --social-bg: #f1f5f9;
+  --shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--text-h);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text-b);
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

@@ -2,23 +2,26 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
 /* Mobile / Touch / Inspect mode mein bhi hover effects chalane ke liye */
 @media (hover: none) {
   .touch-card:active {
-    transform: translateY(-6px) scale(1.02);
-    border-color: rgb(56 189 248);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.15);
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgb(37 99 235);
+    box-shadow: 0 12px 20px -5px rgb(15 23 42 / 0.1);
   }
 
-  .touch-btn-sky:active {
-    background-color: rgb(2 132 199);
+  .touch-btn-sky:active,
+  .touch-btn-blue:active {
+    background-color: rgb(30 64 175);
     transform: scale(0.97);
   }
 
   .touch-btn-dark:active {
-    background-color: rgb(51 65 85);
+    background-color: rgb(241 245 249);
     transform: scale(0.97);
   }
 

@@ -24,7 +24,7 @@ function App() {
 
   if (showFullGallery) {
     return (
-      <div className="overflow-x-hidden">
+      <div className="min-h-screen bg-white text-slate-900 overflow-x-hidden">
         <FullGalleryPage
           onBackHome={() => setShowFullGallery(false)}
           onNavigateSection={handleNavigateSection}
@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 font-sans antialiased overflow-x-hidden">
+    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased overflow-x-hidden">
       <Navbar />
       <Hero />
       <Features />
@@ -42,7 +42,7 @@ function App() {
       <Faculty />
       <GalleryPreview onOpenFullGallery={() => setShowFullGallery(true)} />
       <ContactAdmission />
-      <Footer />
+      <Footer onNavigateSection={handleNavigateSection} />
     </div>
   );
 }
